@@ -1,0 +1,50 @@
+<!-- <form action="">
+    <div class="form-group">
+        <label for="kalori">Kalori</label>
+        <input [(ngModel)]="jumlahKalori" name ="kalori" #kalori="ngModel" type="number" id="kalori" (change)="log()" >
+        
+        <label  for="" *ngIf="jumlahKalori === 1500"> Anda bisa istirahat</label>
+        <label  for="" *ngIf="jumlahKalori >= 2300"> Anda harus lari selama {{ jumlahKalori - 1500 / 10 }} menit</label>
+        <label  for="" *ngIf="jumlahKalori >= 1950 && jumlahKalori < 2300"> Anda harus bersepeda {{ jumlahKalori - 1500 / 10 }} menit</label>
+        <label  for="" *ngIf="jumlahKalori  > 1500 && jumlahKalori < 1950 "> Anda harus berenang {{ jumlahKalori - 1500 / 10 }} menit</label>
+    </div>
+</form> -->
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+  
+                <h2 class="fw-bold mb-2 text-uppercase">Diet Routine</h2>
+                
+                <!-- form template driven untuk menghitung kalori berdasarkan input -->
+                <form >
+                <div class="form-outline form-white mb-4">
+                    <label class="form-label" for="typeEmailX">Masukan Kalori Anda</label>
+                  <input [(ngModel)]="jumlahKalori" name ="kalori" #kalori="ngModel" type="number" id="kalori" (change)="log()" id="typeEmailX" class="form-control form-control-lg" />
+                  
+                </div>
+                
+                <h4  for="" *ngIf="jumlahKalori === 1500"> <strong> Anda bisa istirahat</strong></h4>
+                <h4  for="" *ngIf="jumlahKalori >= 2300"> <strong>Anda harus lari selama {{ jumlahKalori - 1500 / 10 }} menit</strong></h4>
+                <h4  for="" *ngIf="jumlahKalori >= 1950 && jumlahKalori < 2300"> <strong>Anda harus bersepeda selama {{ jumlahKalori - 1500 / 10 }} menit</strong></h4>
+                <h4  for="" *ngIf="jumlahKalori  > 1500 && jumlahKalori < 1950 "> <strong>Anda harus berenang selama {{ jumlahKalori - 1500 / 10 }} menit</strong></h4>
+                
+                
+                </form>
+  
+                
+  
+            </div>
+              
+             
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
